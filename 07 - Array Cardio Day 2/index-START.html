@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Array Cardio 💪💪</title>
+</head>
+
+<body>
+  <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
+  <script>
+    // ## Array Cardio Day 2
+
+    const people = [
+      { name: 'Wes', year: 1988 },
+      { name: 'Kait', year: 1986 },
+      { name: 'Irv', year: 1970 },
+      { name: 'Lux', year: 2015 }
+    ];
+
+    const comments = [
+      { text: 'Love this!', id: 523423 },
+      { text: 'Super good', id: 823423 },
+      { text: 'You are the best', id: 2039842 },
+      { text: 'Ramen is my fav food ever', id: 123523 },
+      { text: 'Nice Nice Nice!', id: 542328 }
+    ];
+
+    // Some and Every Checks
+    // Array.prototype.some() // is at least one person 19 or older?
+    // Array.prototype.every() // is everyone 19 or older?
+
+    // someで19歳以上の人がいるかを調べる
+    const some19 = people.some(parson => {
+      const now = new Date();
+      const year = now.getFullYear();
+      return year - parson.year >= 19;
+    });
+    console.log({some19});
+
+    // everyで全員19歳以上かどうかを調べる
+    const every19 = people.every(parson => {
+      const now = new Date();
+      const year = now.getFullYear();
+      return year - parson.year >= 19;
+    });
+
+    console.log(every19);
+
+    // Array.prototype.find()
+    // Find is like filter, but instead returns just the one you are looking for
+    // find the comment with the ID of 823423
+
+    //findでIDが823423のコメントを見つける
+    const findComment = comments.find(comment => {
+      return comment.id === 823423;
+    });
+    console.log(findComment);
+
+    // Array.prototype.findIndex()
+    // Find the comment with this ID
+    // delete the comment with the ID of 823423
+
+    //findIndexでIDが823423のコメントの位置を見つけて削除する
+    const findIndex = comments.findIndex(comment => {
+      return comment.id === 823423;
+    });
+
+    // 取得したインデックスのコメントを削除
+    // spliceだと元の配列に変更を加える破壊的メソッドとなる
+    // const test = comments.splice(findIndex, 1);
+
+    // スプレット演算子を使ってconmmentsを参照してnewCommentsをつくる
+    const newComments = [
+      // 先頭から該当コメントの一つ前までを切り取り
+      ...comments.slice(0, findIndex),
+      // 該当コメントの一つ後ろ以降を切り取り
+      ...comments.slice(findIndex + 1)
+    ];
+    console.table(newComments);
+
+  </script>
+</body>
+
+</html>

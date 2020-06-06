@@ -9,3 +9,7 @@ index-START.htmlが学習してコーディングしたファイルになりま�
 |02 - JS and CSS Clock	|時間を取得して時計をつくる|
 |03 - CSS Variables	|色や線の太さなどのCSSを操作して表示する|
 |04 - Array Cardio Day 1	|配列操作の練習|
+|05 - Flex Panel Gallery	|toggleメソッドを使ってCSSクラスを操作する|
+|06 - Type Ahead	|jsonデータを読み込んで検索して表示|
+|07 - Array Cardio Day 2	|配列操作の練習その2|
+
