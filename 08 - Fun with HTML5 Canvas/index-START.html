@@ -22,8 +22,8 @@
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     ctx.strokeStyle = '#BADA55';
-    ctx.lineJoin = 'round';
-    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round'; // 線の接合箇所の形状
+    ctx.lineCap = 'round'; // 線端の形状
     ctx.lineWidth = 100;
 
     let isDrawing = false;
@@ -37,11 +37,11 @@
       console.log(e);
       ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
       ctx.beginPath();
-      ctx.moveTo(lastX, lastY);
-      ctx.lineTo(e.offsetX, e.offsetY);
+      ctx.moveTo(lastX, lastY); // 直前の座標
+      ctx.lineTo(e.offsetX, e.offsetY); // offsetは要素内の座標
       ctx.stroke();
 
-      [lastX, lastY] = [e.offsetX, e.offsetY];
+      [lastX, lastY] = [e.offsetX, e.offsetY]; // 座標を保存
 
       // 色の変化
       hue++;
@@ -63,7 +63,7 @@
     canvas.addEventListener('mousemove', draw);
     canvas.addEventListener('mousedown', (e) => {
       isDrawing = true;
-      [lastX, lastY] = [e.offsetX, e.offsetY]; //マウスを押した時に座標を取得
+      [lastX, lastY] = [e.offsetX, e.offsetY]; //マウスを押した時に直前の座標を新しく取得
     });
     canvas.addEventListener('mouseup', () => isDrawing = false);
     canvas.addEventListener('mouseout', () => isDrawing = false);
