@@ -12,4 +12,5 @@ index-START.htmlが学習してコーディングしたファイルになりま�
 |05 - Flex Panel Gallery	|toggleメソッドを使ってCSSクラスを操作する|
 |06 - Type Ahead	|jsonデータを読み込んで検索して表示|
 |07 - Array Cardio Day 2	|配列操作の練習その2|
+|08 - Fun with HTML5 Canvas	|Canvas機能を使った描画ミニアプリ|
 
