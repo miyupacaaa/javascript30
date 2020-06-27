@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Console Tricks!</title>
+</head>
+
+<body>
+
+  <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+  <script>
+    const dogs = [
+      { name: 'Snickers', age: 2 },
+      { name: 'hugo', age: 8 }
+    ];
+
+    function makeGreen() {
+      const p = document.querySelector('p');
+      p.style.color = '#BADA55';
+      p.style.fontSize = '50px';
+    }
+
+    // Regular
+    console.log('Hello');
+
+    // Interpolated
+    //絵文字を挿入
+    console.log('Hello I am a %s string!', '💩');
+
+    // Styled
+    //logにスタイルを適用する
+    console.log('%c Hello I am some great text!', 'font-size:50px; background:red; text-shadow: 10px 10px 0 blue');
+
+    // warning!
+    // 警告としてのログを出力
+    console.warn('OH NOOO');
+
+    // Error :|
+    // エラーとしてのログを出力
+    console.error('Shit!');
+
+    // Info
+    // インフォメーションとしてのログを出力
+    console.info('Crocodiles eat 3-4 people per year');
+
+    // Testing
+    const p = document.querySelector('p');
+    // p要素がouchクラスを持っていなかったらエラーメッセージ出力
+    console.assert(p.classList.contains('ouch'), 'That is wrong!');
+
+    // clearing
+    // 出力されている全てのログを削除
+    console.clear();
+
+    // Viewing DOM Elements
+    console.log(p);
+    console.dir(p); // オブジェクトの内容をJSONで表現したものを出力
+
+    // Grouping together
+    // グループ分けをしてログを表示
+    dogs.forEach(dog => {
+      // console.group(`${dog.name}`);
+      console.groupCollapsed(`${dog.name}`); // グループ分けを折り畳んで開始
+      console.log(`This is ${dog.name}`);
+      console.log(`${dog.name} is ${dog.age} years old`);
+      console.log(`${dog.name} is ${dog.age * 7} dog years old`);
+      console.groupEnd(`${dog.name}`);
+    });
+
+    // counting
+    // 値が呼び出された回数を出力
+    console.count('Wes');
+    console.count('Wes');
+    console.count('Steve');
+    console.count('Steve');
+    console.count('Wes');
+    console.count('Steve');
+    console.count('Wes');
+    console.count('Steve');
+    console.count('Steve');
+    console.count('Steve');
+    console.count('Steve');
+    console.count('Steve');
+
+    // timing
+    // タイマーの開始と終了
+    console.time('fetching data');
+    fetch('https://api.github.com/users/wesbos')
+      .then(data => data.json())
+      .then(data => {
+        console.timeEnd('fetching data');
+        console.log(data);
+      });
+
+    console.table(dogs);
+
+  </script>
+</body>
+
+</html>
