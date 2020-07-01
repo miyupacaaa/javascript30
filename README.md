@@ -15,4 +15,5 @@ index-START.htmlが学習してコーディングしたファイルになりま�
 |08 - Fun with HTML5 Canvas	|Canvas機能を使った描画ミニアプリ|
 |09 - Dev Tools Domination	|デベロッパーツールとconsoleの使い方|
 |10 - Hold Shift and Check Checkboxes	|Shiftキーで一気にチェックできるチェックリスト|
+|11 - Custom Video Player	|動画再生アプリをつくる|
 
