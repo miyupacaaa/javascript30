@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Key Detection</title>
+  <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
+</head>
+<body>
+<script>
+  const pressed = [];
+  const secretCode = 'wesbos'; // 入力するコード
+
+  window.addEventListener('keyup',(e) => {
+    console.log(e.key);
+    console.log(-secretCode.length - 1);
+    pressed.push(e.key);
+    pressed.splice(-secretCode.length, pressed.length - secretCode.length);
+    //入力がシークレットコードと一致した時に画像を表示させる
+    if(pressed.join('').includes(secretCode)) {
+      console.log("DING DING!");
+      cornify_add();
+    }
+    console.log(pressed);
+  });
+</script>
+</body>
+</html>

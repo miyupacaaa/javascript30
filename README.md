@@ -10,10 +10,10 @@ index-START.htmlが学習してコーディングしたファイルになりま�
 |03 - CSS Variables	|色や線の太さなどのCSSを操作して表示する|
 |04 - Array Cardio Day 1	|配列操作の練習|
 |05 - Flex Panel Gallery	|toggleメソッドを使ってCSSクラスを操作する|
-|06 - Type Ahead	|jsonデータを読み込んで検索して表示|
+|06 - Type Ahead	|jsonデータを読み込んで検索して表示する|
 |07 - Array Cardio Day 2	|配列操作の練習その2|
 |08 - Fun with HTML5 Canvas	|Canvas機能を使った描画ミニアプリ|
 |09 - Dev Tools Domination	|デベロッパーツールとconsoleの使い方|
 |10 - Hold Shift and Check Checkboxes	|Shiftキーで一気にチェックできるチェックリスト|
 |11 - Custom Video Player	|動画再生アプリをつくる|
-
+|12 - Key Sequence Detection	|キーシーケンスを検出する|
