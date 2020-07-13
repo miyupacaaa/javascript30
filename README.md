@@ -18,3 +18,4 @@ index-START.htmlが学習してコーディングしたファイルになりま�
 |11 - Custom Video Player	|動画再生アプリをつくる|
 |12 - Key Sequence Detection	|キーシーケンスを検出する|
 |13 - Slide in on Scroll	|スクロールしたら画像をスライドアニメーション表示する|
+|14 - JavaScript References VS Copying	|参照とコピー|
