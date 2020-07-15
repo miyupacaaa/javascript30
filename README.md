@@ -19,3 +19,4 @@ index-START.htmlが学習してコーディングしたファイルになりま�
 |12 - Key Sequence Detection	|キーシーケンスを検出する|
 |13 - Slide in on Scroll	|スクロールしたら画像をスライドアニメーション表示する|
 |14 - JavaScript References VS Copying	|参照とコピー|
+|15 - LocalStorage	|ローカルストレージとイベント移譲|
