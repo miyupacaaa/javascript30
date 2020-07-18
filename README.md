@@ -21,3 +21,4 @@ index-START.htmlが学習してコーディングしたファイルになりま�
 |14 - JavaScript References VS Copying	|参照とコピー|
 |15 - LocalStorage	|ローカルストレージとイベント移譲|
 |16 - Mouse Move Shadow	|マウスの位置でtextShadowの位置を制御する|
+|17 - Sort Without Articles	|冠詞なしで並び替える|
