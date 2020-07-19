@@ -22,3 +22,4 @@ index-START.htmlが学習してコーディングしたファイルになりま�
 |15 - LocalStorage	|ローカルストレージとイベント移譲|
 |16 - Mouse Move Shadow	|マウスの位置でtextShadowの位置を制御する|
 |17 - Sort Without Articles	|冠詞なしで並び替える|
+|18 - Adding Up Times with Reduce	|Reduceを使って時間を合計する|
